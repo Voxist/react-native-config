@@ -1,15 +1,16 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
   dependency: {
     platforms: {
       ios: {
-        podspecPath: path.join(__dirname, 'react-native-config.podspec'),
+        podspecPath: path.join(__dirname, "react-native-config.podspec")
       },
-      // android: {
-      //   packageImportPath: 'import io.invertase.firebase.RNFirebasePackage;',
-      //   packageInstance: 'new RNFirebasePackage()',
-      // },
-    },
-  },
-}
+      android: {
+        packageImportPath:
+          "import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;",
+        packageInstance: "new ReactNativeConfigPackage()"
+      }
+    }
+  }
+};
